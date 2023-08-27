@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+         body{
+            background-color: #141414!important;
+         }
+    </style> 
+
+    <title>Text-to-Speech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body class="text-white">
+    <div class="container text-center">
+        <img src="./dist/img/logo.jpg" alt="logo" width="20%" height="50%" class="mb-5 mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <textarea name="" id="text-input" class="form-control form-control-lg" placeholder="Type anything here"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Rate</label>
+                        <div id="rate-value" class="badge badge-primary float-right">1</div>
+                        <input type="range" id="rate" class="custom-range" min="0.5" max="2" value="1" step="0.1">
+                    </div>
+                    <div class="form-group">
+                        <label for="pitch">Pitch</label>
+                        <div id="pitch-value" class="badge badge-primary float-right">1</div>
+                        <input type="range" id="pitch" class="custom-range" min="0" max="2" value="1" step="0.1">
+                    </div>
+                    <div class="form-group m-4">
+                        <select class="form-control form-control-lg" id="voice-select"></select>
+                    </div>
+                    <button class="btn btn-light btn-lg btn-block m-4">Speak</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="./dist/js/main.js"></script>
+</html>
